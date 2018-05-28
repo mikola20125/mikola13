@@ -1,0 +1,132 @@
+﻿Здравствуйте. Посмотрите, пожалуйста код. Он, конечно дублируется, но думаю что смогу поправить. Может быть Вы подскажите как?
+Вот, например, при раскраске ячеек таблицы я хотел раскрасить все нечетные ячейки четных строк в светлый цвет, но при добавлении условия на четность почему-то
+стали добавляться новые ячейки и красились в светлый цвет также четные ячейки(я решил не ставить условие на четность и пробежаться по ячейкам в каждой из строк
+и как результат много дублирующегося кода):
+то, что сейчас
+//Раскраска шахматной доски
+function colorTh(){
+    var tr = document.getElementsByTagName("tr")[1];
+    var th = tr.children;
+    var i = 0;
+    for(i = 0; i < th.length; i++){
+        th[1].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[3].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[5].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[7].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[2].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[4].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[6].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[8].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+    var tr = document.getElementsByTagName("tr")[2];
+     th = tr.children;
+     i = 0;
+    for(i = 0; i < th.length; i++){
+        th[2].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[4].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[6].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[8].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[1].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[3].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[5].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[7].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[3];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[1].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[3].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[5].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[7].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[2].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[4].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[6].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[8].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[4];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[2].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[4].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[6].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[8].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[1].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[3].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[5].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[7].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[5];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[1].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[3].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[5].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[7].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[2].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[4].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[6].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[8].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[6];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[2].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[4].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[6].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[8].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[1].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[3].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[5].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[7].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[7];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[1].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[3].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[5].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[7].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[2].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[4].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[6].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[8].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+
+    var tr = document.getElementsByTagName("tr")[8];
+    th = tr.children;
+    i = 0;
+    for(i = 0; i < th.length; i++){
+        th[2].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[4].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[6].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[8].style.backgroundColor = 'rgb(240, 217, 181)';
+        th[1].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[3].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[5].style.backgroundColor = 'rgb(181, 136, 99)';
+        th[7].style.backgroundColor = 'rgb(181, 136, 99)';
+    }
+}
+colorTh();
+
+вот, как хотел:
+var tr = document.getElementsByTagName("tr")[1];
+    var th = tr.children;
+    var i = 0;
+    for(i = 0; i < th.length; i++){
+       if(tr[i] % 2 == 0){
+	th[i].style.backgroundColor = 'rgb(240, 217, 181)';
+       }else{
+	th[i].style.backgroundColor = 'rgb(181, 136, 99)';
+       }
+    }
+то есть все четные ячейки нечетных строк темнее, а четных строк светлее. Но, получилось, что отрисовались новые ячейки, которые вышли за границу таблицы и были перепутаны цвета.  
