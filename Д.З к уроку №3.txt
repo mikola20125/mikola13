@@ -1,0 +1,112 @@
+1) — помощью цикла while вывести все простые числа в промежутке от 0 до 100
+
+			ќтвет:
+ document.write("<ul style='list-style-type: none; width: 100px; margin: 0 auto;'>");
+    var a = 0;
+    while(a != 101){
+       document.write("<li>"+a+"</li>");
+        ++a;
+    }
+    document.write("</ul>");
+
+
+2) — помощью цикла doЕwhile написать функцию дл€ вывода чисел от 0 до 10, чтобы результат выгл€дел так:
+0 Ц это ноль
+1 Ц нечетное число
+2 Ц четное число
+3 Ц нечетное число
+Е
+10 Ц четное число
+			ќтвет:
+var b = 0;
+    function myFunction(b){
+        if(b==0){
+            document.write("<p>"+b+"-это ноль;</p>");
+        }
+        do{
+            b++;
+            if(b == 0){
+                b = "<p>0 -Ёто ноль.</p>";
+            }
+            if( b%2 == 1){
+                document.write("<p>"+b+"-это нечетное число.</p>");
+            }else if(b%2 == 0){
+                document.write("<p>"+b+"-это четное число.</p>");
+
+            }
+        }while(b<=10);
+    }
+    myFunction(b);
+
+
+
+3) * ¬ывести с помощью цикла for числа от 0 до 9, Ќ≈ использу€ тело цикла. “о есть выгл€деть должно вот так:
+
+for(Е){// здесь пусто}
+
+			ќтвет:
+ var i = 0;
+    for(i = 0; i<=9; document.write("<p>"+i+++"</p>")){
+
+    }
+
+
+
+
+
+4) * Ќарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 р€дов, а не 5:
+
+x
+xx
+xxx
+xxxx
+xxxxx
+
+			ќтвет:
+	Ќичего лучше не смог придумать, как с помощью цикла воводить нужное количество  "х":
+ var i;
+    var b;
+    for(i = 0; i<=19; i++){
+        b = "x";
+        if(i==1) {
+            console.log("x");
+        }else if(i == 2){
+            console.log("xx");
+        }else if(i == 3) {
+            console.log("xxx");
+        }else if(i == 4) {
+            console.log("xxxx");
+        }else if(i == 5) {
+            console.log("xxxxx");
+        }else if(i == 6) {
+            console.log("xxxxxx");
+        }else if(i == 7) {
+            console.log("xxxxxxx");
+        }else if(i == 8) {
+            console.log("xxxxxxxx");
+        }else if(i == 9) {
+            console.log("xxxxxxxxx");
+        }else if(i == 10) {
+            console.log("xxxxxxxxxx");
+        }else if(i == 11) {
+            console.log("xxxxxxxxxxx");
+        }else if(i == 12) {
+            console.log("xxxxxxxxxxxx");
+        }else if(i == 13) {
+            console.log("xxxxxxxxxxxxx");
+        }else if(i == 14) {
+            console.log("xxxxxxxxxxxxxx");
+        }else if(i == 15) {
+            console.log("xxxxxxxxxxxxxxx");
+        }else if(i == 16) {
+            console.log("xxxxxxxxxxxxxxxx");
+        }else if(i == 17) {
+            console.log("xxxxxxxxxxxxxxxxx");
+        }else if(i == 18) {
+            console.log("xxxxxxxxxxxxxxxxxx");
+        }else if(i == 19) {
+            console.log("xxxxxxxxxxxxxxxxxxx");
+        }else if(i == 20) {
+            console.log("xxxxxxxxxxxxxxxxxxxx");
+        }
+    }
