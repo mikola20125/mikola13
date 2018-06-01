@@ -1,0 +1,25 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 700px;
+    margin: 500px auto;
+    background-color: aliceblue;
+}
+
+#bigWrapper{
+width: 700px;
+height: 800px;
+    background-color: aliceblue;
+    margin: 100px auto;
+}
+
+button,
+img{
+    width: 150px;
+    height: 150px;
+}
+
