@@ -1,0 +1,20 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.tabs{
+    margin: 0 auto;
+}
+fieldset>legend{
+    text-align: center;
+}
+form p{
+    text-align: center;
+}
+input[type='submit']{
+    text-align: center;
+}
